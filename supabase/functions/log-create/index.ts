@@ -2,8 +2,8 @@ import "jsr:@supabase/functions-js/edge-runtime.d.ts";
 import { createClient } from "jsr:@supabase/supabase-js@2";
 
 export const handler = async (req: Request) => {
-  const SUPABASE_URL = Deno.env.get("SUPABASE_URL")!;
-  const SERVICE_KEY = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
+  const SUPABASE_URL = Deno.env.get("628a36c7747607871fbd7ed780ba2ed4e84e9626b9341a4621e9bdeaf00bfab0")!;
+  const SERVICE_KEY = Deno.env.get("b680746fbb8e9ff1c246266d7eb40f9301b6ec4d637425f13cc74486cdf0ed3d")!;
   const supabase = createClient(SUPABASE_URL, SERVICE_KEY);
 
   const { org_id, note, start_at, end_at, project_id } = await req.json();
